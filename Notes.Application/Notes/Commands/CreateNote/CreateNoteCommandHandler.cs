@@ -12,7 +12,7 @@ namespace Notes.Application.Notes.Commands.CreateNote
     {
         private readonly INotesDbContext _dbContext;
         public CreateNoteCommandHandler(INotesDbContext dbContext) =>
-            _dbContext = _dbContext;
+            _dbContext = dbContext;
         public async Task<Guid> Handle(CreateNoteCommand request,
             CancellationToken cancellationToken)
         {
