@@ -8,7 +8,7 @@ namespace Notes.Persistence
     public static class DependencyInjection
     {
         //For adding DbContext to WebApi
-        public static IServiceCollection AddPersistance(this IServiceCollection
+        public static IServiceCollection AddPersistence(this IServiceCollection
             services, IConfiguration configuration)
         {
             //Add using DbContext
